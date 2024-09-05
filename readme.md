@@ -4,9 +4,7 @@ Welcome to the **100xDevs Cohort 3.0** by **Harkirat Singh**!
 This repository is your go-to resource for:
 
 - 📚 Lecture codes with detailed explanations
-- 📝 Assignments to boost your skills
-- ✅ Assignment solutions with in-depth commentary 
-- 🗂️ A well-organized, lecture-wise breakdown of all the topics covered
+- ✅ Assignment of Cohort 3.0 with solutions with in-depth commentary
 
 Eager to dive into the code? Here's how you can get started:
 
