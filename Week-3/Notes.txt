@@ -1,0 +1,107 @@
+Keccak-256:
+
+    -Keccak-256 is a cryptographic hash function used extensively in Ethereum.
+    -Try it out here: Keccak-256 Online Tool
+
+    -Properties:
+        -Collision Resistance: Designed to make it extremely difficult to find two inputs that produce the same hash. While collisions are theoretically possible, they are extremely unlikely.
+        -Pre-Image Resistance: Nearly impossible to reverse the hash to find the original input, although brute-force attacks are still possible.
+        -Key Length: Outputs a 256-bit hash value, which makes brute-force attacks difficult.
+        -Implementation: Ensure the Keccak-256 implementation is secure and up to date.
+
+
+Ethereum (ETH):
+                                            Keccak-256 Algo                     Last 20 bytes
+    GenerateKeyPair()------------>PublicKey------------------>32 Byte String------------------>0x(20 bytes)
+
+    -Ethereum Addresses
+        -Public Address: 20 bytes (e.g., 0x8BCd4591F46e809B15A490F5C6eD031FDDE0bee0)
+
+    -Generation Process:
+        -Generate a public key using elliptic curve cryptography.
+        -Hash the public key using Keccak-256.
+        -Take the last 20 bytes of the hash.
+        -Convert to hexadecimal and prefix with '0x'.
+
+    -References:
+        -Backpack Implementation
+        -Ethers.js Implementation
+
+
+Solana (SOL):
+                                                                Base58
+--------->EdDSA ed25519 Algo------------>32 byte Private Key-------------> 5W4oGgDHqir3KNEcmiMn6tNHmbWjC7PgW11sk4AwWbpe (Public Key)
+
+    -Solana Addresses
+        -Public Keys: 32 bytes (e.g., 5W4oGgDHqir3KNEcmiMn6tNHmbWjC7PgW11sk4AwWbpe)
+        -Note: Unlike Ethereum, Solana addresses do not require hashing/chopping.
+
+
+Frontend vs Backend:
+
+    -Backend Servers: Run your backend logic.
+    -Frontend: Interacts with backend servers via HTTP requests.
+    -Example of a traditional backend request: JSONPlaceholder API
+    -Postman: Allows sending requests to backend servers without using a browser.
+
+RPC & JSON-RPC:
+
+    -JSON-RPC: A remote procedure call (RPC) protocol encoded in JSON. Allows client-server communication over a network.
+    
+    -Use Cases:
+        -Sending transactions to the blockchain.
+        -Fetching blockchain data (e.g., balances).
+
+    💡An RPC (Remote Procedure Call) server is not inherently part of the blockchain network itself, nor does it participate in staking or consensus mechanisms
+
+    -Additional RPC Methods
+        -GRPC
+        -TRPC
+
+RPC Server:
+
+    -RPC Server: Allows external clients to interact with the blockchain network. It acts as an intermediary between the blockchain and external applications.
+        -It is easy to scale an RPC server.
+        -Typically, it's best to use an RPC server, but it's also possible to create your own—though this approach is generally not recommended.
+        -Important Note: An RPC server does not participate in staking or consensus mechanisms.
+
+    -Common RPC Providers
+        -Quicknode - QuickNode - Blockchain infrastructure powering secure, decentralized innovation.
+        -Alchemy - Alchemy - the web3 development platform
+        -Helius - Helius - Solana's Leading RPC & API Platform
+        -Infura - Web3 Development Platform | IPFS API & Gateway
+
+Common RPC Calls:
+
+    -Solana:
+        -Get Account Info
+        -Get Balance
+        -Get Transaction Count
+
+    -Ethereum
+        -Get Balance
+        -Get Latest Block
+        -Get Block by Number
+
+Wei and Lamports:
+
+    -When working with financial applications, we avoid storing user balances in decimals to prevent floating-point errors.
+    -Instead, we use smaller units, such as wei for ETH or lamports for SOL, to accurately represent and display the balance.
+
+    -Ethereum (ETH)
+        -Wei: The smallest unit of Ether.
+        -Value: 1 Ether (ETH) = 10^18 Wei.
+        -Gwei: A larger unit of Ether, commonly used in gas prices.
+        -Value: 1 Ether = 10^9 Gwei
+
+    -Solana (SOL)
+        -Lamports: The smallest unit of SOL.
+        -Value: 1 SOL = 10^9 Lamports
+        -Example:
+            //Code:
+            
+            const { LAMPORTS_PER_SOL } = require("@solana/web3.js")
+
+            console.log(LAMPORTS_PER_SOL)
+
+
