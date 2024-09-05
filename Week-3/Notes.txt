@@ -99,9 +99,8 @@ Wei and Lamports:
         -Value: 1 SOL = 10^9 Lamports
         -Example:
             //Code:
-            
-            const { LAMPORTS_PER_SOL } = require("@solana/web3.js")
 
+            const { LAMPORTS_PER_SOL } = require("@solana/web3.js")
             console.log(LAMPORTS_PER_SOL)
 
 
