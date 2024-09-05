@@ -1,4 +1,4 @@
-# 🚀 100xDevs (Harkirat) Cohort 3.0 - Web Dev + DevOps 🚀
+# 🚀 100xDevs Cohort 3.0 - Web Dev + DevOps 
 
 Welcome to the **100xDevs Cohort 3.0** by **Harkirat Singh**!  
 This repository is your go-to resource for:
