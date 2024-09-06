@@ -13,4 +13,4 @@ Eager to dive into the code? Here's how you can get started:
 Simply run the following commands in your terminal to clone the repository and start building locally:
 
 ```bash
-git clone https://github.com/irohandev/Web3-Cohort-3.0.git
+https://github.com/irohandev/Web3-Cohort-3.0.git
