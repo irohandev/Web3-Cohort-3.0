@@ -1,5 +1,5 @@
 /*
-Same program of smart contract in ETH but now here its written in node.js http server
+Same program of smart contract in ETH but now here its written in node.js http server which does similar !
 */
 
 const express = require('express');
