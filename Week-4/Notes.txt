@@ -1,0 +1,5 @@
+Notes:
+
+1. Programs/Smart contracts:
+    - ETH was one of the first blockchains to introduce the `concept` of decentralized `state` / `programs`. 
+    - These are popularly known as `smart contracts` on the ETH blockchain.
