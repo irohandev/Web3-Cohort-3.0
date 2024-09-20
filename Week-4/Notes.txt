@@ -17,3 +17,6 @@ Notes:
     - It requires accounts to maintain a minimum balance proportional to the amount of data they store on the network. 
     - Accounts that fail to maintain this minimum balance will be removed from the ledger to free up storage.
     - Rent is refundable. If an account is closed (removed from the network), the data is deleted from the chain and the rent is refunded to the account owner (or other defined account).
+
+
+    
